@@ -1,0 +1,225 @@
+body {
+  background-color: #791B99;
+  font-family: "Quattrocento Sans", serif;
+  font-size: inherit;
+  padding-right: 25%;
+  padding-left: 25%;
+  margin:0;
+}
+
+h1 {
+  font-family: "Quattrocento", serif;
+  text-align: left;
+  padding-left: 5%;
+}
+
+header {
+  width: auto;
+  height: 10vh;
+  width: auto;
+  text-align:right;
+  display: flex;
+  background-color: #9A55B2;
+}
+
+.mainimage {
+  width: auto;
+  height: 50vh;
+  display: flex;
+  position: relative;
+  color: white;
+  font-size: 1.2em;
+}
+
+#quotetext {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+
+.studyresearchpicsline {
+  height: 55vh;
+  width: auto;
+  display:flex;
+  text-align: center;
+  background-color: blue;
+  font-size: 0.8em;
+  justify-content: space-between;
+}
+
+.studyimg {
+  width: 50vw;
+  font-size: 1em;
+  padding: 5%;
+}
+
+.researchimg {
+  width: 50vw;
+  font-size: 1em;
+  padding: 5%;
+}
+
+.studentquote {
+  height: 30vh;
+  background-color: pink;
+  display:flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#zizekquote {
+  padding-left:15%;
+  padding-top: 5%;
+
+}
+
+#zizekphoto {
+  padding-right: 25%;
+  padding-top: 5%;
+
+}
+
+#zizek {
+  text-align: right;
+  align-items: left;
+}
+
+.newsimgs {
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: center;
+  background-color: green;
+  }
+
+.footer {
+  display:flex;
+  background-color: #9A55B2;
+}
+
+/* Properties for secondary webpages (research/study) */
+
+.rpagetitle {
+  display: flex;
+  padding-left: 2.5%;
+}
+
+.rpagepic1 {
+  display :flex;
+  text-align: right;
+  justify-content: space-between;
+  background-color:  #A993FF;
+  margin: auto;
+  padding-top: 4.5%;
+  padding-left: 1.5%;
+}
+
+.rpagepic2 {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  background-color:  #A993FF;
+  margin: auto;
+  padding-top: 4.5%;
+  padding-left: 1.5%;
+}
+
+.rpagepic3 {
+  display: flex;
+  text-align: right;
+  justify-content: space-between;
+  background-color:  #A993FF;
+  margin: auto;
+  padding-top: 4.5%;
+  padding-left: 1.5%;
+}
+
+.researchblurb1 {
+  padding-left: 2.5%;
+  padding-bottom: 4.5%;
+  padding-right: 2.5%;
+}
+
+@media only screen and (max-width: 1400px ) {
+    body {
+      padding-right: 15%;
+      padding-left: 15%;
+      }
+    .studyresearchpicsline {
+      height:55vh;
+      }
+
+@media only screen and (max-width: 1000px ) {
+    body {
+      padding-right: 5%;
+      padding-left: 5%;
+    }
+    h1 {
+      padding-left: 2.5%;
+    }
+    .header {
+      font-size: 0.8em;
+    }
+    .studyresearchpicsline {
+      height:55vh;
+    }
+
+}
+
+@media only screen and (max-width: 800px ) {
+  body {
+      padding-right: 2.5%;
+      padding-left: 2.5%;
+    }
+  .header {
+    font-size: 0.7em;
+    }
+.studyresearchpicsline {
+  height:50vh;
+    }
+  }
+  /* This breakpoint seems most simular to the standard mobile phone sizing, though ultimately, I conceed it could also effect people with old square CRT monitors
+  that view webpages in a narrow window */
+
+@media only screen and (max-width: 450px ) {
+  body {
+    padding-right: 0%;
+    padding-left: 0%;
+    }
+
+  .header {
+    font-size: 0.5em;
+    }
+
+  .studyresearchpicsline {
+    flex-flow: wrap;
+    height:100vh;
+    }
+  #quotetext {
+        opacity: 0.0;
+      }
+  .studyimg {
+        width: auto;
+  }
+
+  .researchimg {
+        width: auto;
+  }
+
+  .studentquote {
+        display: none;
+      }
+
+  #zizek {
+    display: block;
+  }
+
+  .newsimgs {
+    flex-flow: wrap;
+    align-content: center;
+    text-align: center;
+  }
+
+  }
