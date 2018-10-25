@@ -5,6 +5,7 @@ body {
   padding-right: 25%;
   padding-left: 25%;
   margin:0;
+  font-size: 1.2em;
 }
 
 h1 {
@@ -15,7 +16,7 @@ h1 {
 
 header {
   width: auto;
-  height: 10vh;
+  height: auto;
   width: auto;
   text-align:right;
   display: flex;
@@ -24,7 +25,7 @@ header {
 
 .mainimage {
   width: auto;
-  height: 50vh;
+  height: auto;
   display: flex;
   position: relative;
   color: white;
@@ -40,11 +41,11 @@ header {
 
 
 .studyresearchpicsline {
-  height: 55vh;
+  height: auto;
   width: auto;
   display:flex;
   text-align: center;
-  background-color: blue;
+  background-color: #A993FF;
   font-size: 0.8em;
   justify-content: space-between;
 }
@@ -62,11 +63,12 @@ header {
 }
 
 .studentquote {
-  height: 30vh;
-  background-color: pink;
+  height: auto;
+  background-color: #9A55B2;
   display:flex;
   justify-content: space-between;
   text-align: center;
+  padding-bottom: 2%;
 }
 
 #zizekquote {
@@ -91,135 +93,305 @@ header {
   justify-content: space-between;
   flex-direction: row;
   text-align: center;
-  background-color: green;
+  background-color: #A993FF;
+  padding-top: 2%;
   }
 
-.footer {
+footer {
   display:flex;
   background-color: #9A55B2;
 }
 
-/* Properties for secondary webpages (research/study) */
+/* Properties for secondary webpages (research then study respectively) */
 
 .rpagetitle {
   display: flex;
   padding-left: 2.5%;
+  background-color: #A993FF;
+  text-align: center;
+}
+
+.rpage1 {
+  display :flex;
+  height: auto;
+  text-align: right;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #A993FF;
+  padding-bottom: 2%;
 }
 
 .rpagepic1 {
-  display :flex;
-  text-align: right;
+  width: 50vw;
+  padding-right: 5%;
+}
+
+.rpageblurb1 {
+  width: 50vw;
+  padding-right: 1.5%;
+}
+
+.rpage2 {
+  display: flex;
+  height: auto;
+  text-align: left;
+  align-items: center;
   justify-content: space-between;
   background-color:  #A993FF;
-  margin: auto;
-  padding-top: 4.5%;
-  padding-left: 1.5%;
+  padding-bottom: 2%;
 }
 
 .rpagepic2 {
+  width: 50vw;
+  padding-left: 10%;
+}
+
+.rpageblurb2 {
+  width: 50vw;
+  padding-left: 1.5%;
+}
+
+.rpage3 {
   display: flex;
-  text-align: left;
+  height: auto;
+  text-align: right;
+  align-items: center;
   justify-content: space-between;
   background-color:  #A993FF;
-  margin: auto;
-  padding-top: 4.5%;
-  padding-left: 1.5%;
+  padding-bottom: 2%;
 }
 
 .rpagepic3 {
-  display: flex;
-  text-align: right;
-  justify-content: space-between;
-  background-color:  #A993FF;
-  margin: auto;
-  padding-top: 4.5%;
-  padding-left: 1.5%;
+  padding-right: 1.5%;
+  padding-top: 2.5%;
+  width: 50vw;
 }
 
-.researchblurb1 {
-  padding-left: 2.5%;
-  padding-bottom: 4.5%;
-  padding-right: 2.5%;
+.rpageblurb3 {
+  width: 50vw;
+  padding-right: 1.5%;
 }
+
+#dca {
+  display: none;
+}
+
+/* Study pages */
+
+/* This section is for media queries */
 
 @media only screen and (max-width: 1400px ) {
-    body {
-      padding-right: 15%;
-      padding-left: 15%;
-      }
-    .studyresearchpicsline {
-      height:55vh;
-      }
+
+body {
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+}
+
+@media only screen and (max-width: 1200px ) {
+
+body {
+  padding-right: 15%;
+  padding-left: 15%;
+}
+
+h1 {
+  padding-left: 2.5%;
+}
+
+header {
+  font-size: 0.8em;
+}
+footer {
+  font-size: 0.8em;
+}
+
+.studyresearchpicsline {
+  height:auto;
+}
+
+}
 
 @media only screen and (max-width: 1000px ) {
-    body {
-      padding-right: 5%;
-      padding-left: 5%;
-    }
-    h1 {
-      padding-left: 2.5%;
-    }
-    .header {
-      font-size: 0.8em;
-    }
-    .studyresearchpicsline {
-      height:55vh;
-    }
 
+body {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+h1 {
+  padding-left: 2.5%;
+  }
+
+header {
+  font-size: 0.7em;
+}
+footer {
+  font-size: 0.7em;
+}
+
+}
+
+#zizekquote {
+  padding-left:5%;
+  padding-top: 5%;
+}
+.rpagepic1 {
+  padding-top: 0%;
+}
+
+.rpagepic2 {
+  padding-top: 0%;
+}
+
+.rpagepic3 {
+  padding-top: 0%;
+}
+
+.rpageblurb3 {
+  padding-top: 4%;
 }
 
 @media only screen and (max-width: 800px ) {
-  body {
-      padding-right: 2.5%;
-      padding-left: 2.5%;
-    }
-  .header {
-    font-size: 0.7em;
-    }
-.studyresearchpicsline {
-  height:50vh;
-    }
-  }
-  /* This breakpoint seems most simular to the standard mobile phone sizing, though ultimately, I conceed it could also effect people with old square CRT monitors
-  that view webpages in a narrow window */
+body {
+  padding-right: 2.5%;
+  padding-left: 2.5%;
+  font-style: 0.7em;
+}
+
+header {
+  font-size: 0.6em;
+}
+
+footer {
+  font-size: 0.6em;
+}
+
+.rpage1 {
+  height: auto;
+}
+
+.rpage2 {
+  height: auto;
+}
+
+.rpage3 {
+  height: auto;
+}
+
+#zizekquote {
+  padding-right: 0%;
+  padding-top: 5%;
+}
+/* This breakpoint seems most simular to the standard mobile phone sizing, though ultimately, I conceed it could also effect people with old square CRT monitors
+that view webpages in a narrow window */
 
 @media only screen and (max-width: 450px ) {
-  body {
-    padding-right: 0%;
-    padding-left: 0%;
-    }
+body {
+padding-right: 0%;
+padding-left: 0%;
+font-size: 1em;
+}
 
-  .header {
-    font-size: 0.5em;
-    }
+header {
+  font-size: 0.5em;
+  height: auto;
+}
 
-  .studyresearchpicsline {
-    flex-flow: wrap;
-    height:100vh;
-    }
-  #quotetext {
-        opacity: 0.0;
-      }
-  .studyimg {
-        width: auto;
-  }
+footer {
+  font-size: 0.5em;
+  height: auto;
+}
 
-  .researchimg {
-        width: auto;
-  }
+.studyresearchpicsline {
+  flex-flow: wrap;
+  height:auto;
+}
 
-  .studentquote {
-        display: none;
-      }
+#quotetext {
+  opacity: 0.0;
+}
 
-  #zizek {
-    display: block;
-  }
+.studyimg {
+  width: auto;
+  background-color: #9A55B2;
+}
 
-  .newsimgs {
-    flex-flow: wrap;
-    align-content: center;
-    text-align: center;
-  }
+.researchimg {
+  width: auto;
+}
 
-  }
+.studentquote {
+  display: none;
+}
+
+#zizek {
+  display: block;
+}
+
+.newsimgs {
+  flex-flow: wrap;
+  align-content: center;
+  text-align: center;
+}
+
+/* Research Page */
+
+.rpage1 {
+  display :flex;
+  flex-flow: wrap;
+  height: auto;
+  text-align: center;
+  background-color: #A993FF;
+  margin: auto;
+  align-items: none;
+}
+
+.rpagepic1 {
+  width: auto;
+}
+
+.rpageblurb1 {
+  width: auto;
+}
+
+.rpage2 {
+  display: flex;
+  flex-flow: wrap-reverse;
+  height: auto;
+  text-align: center;
+  background-color:  #A993FF;
+}
+.rpagepic2 {
+  width: auto;
+}
+
+.rpageblurb2 {
+  width: auto;
+}
+
+.rpage3 {
+  display: flex;
+  flex-flow: wrap;
+  height: auto;
+  text-align: center;
+  background-color:  #A993FF;
+  margin: auto;
+  padding-bottom: 2%;
+}
+
+.rpagepic3 {
+  width: auto;
+}
+
+.rpageblurb3 {
+  display: none;
+  width: auto;
+}
+
+#dca {
+  display:inline;
+}
+
+}
